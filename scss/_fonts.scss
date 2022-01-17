@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.logoFuente, h1, h2 {
+	font-family: 'Poppins', sans-serif;
+	@media only screen and (max-width: 768px){
+		font-size:40px;
+		font-weight: bold;
+	}
+	@media only screen and (min-width: 1023px){
+		font-size:50px;
+		font-weight: bold;
+	}
+}
+.textoFuente, h3 {
+	font-family: 'Nunito', sans-serif;
+    
+}
+

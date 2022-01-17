@@ -1,0 +1,205 @@
+
+
+/* vista mobile Nav*/
+
+@media only screen and (min-width: 1023px){
+.gridContainerNav{
+	display: grid;
+	grid-template-areas: 
+	"brand nav nav nav nav";
+	grid-template-columns: 16% 21% 21% 21% 21%; 
+}
+
+.brand{
+	grid-area: brand;
+}
+.nav {
+	grid-area: nav;
+}
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 768px){
+	.gridContainerNav {
+		display: grid;
+		grid-template-areas: 
+		"brand"
+		"nav"
+		"nav"
+		"nav"
+		"nav";
+		grid-template-columns: 100%;
+		grid-template-rows: 200px 75px 75px 75px 75px;
+	}
+
+	.brand{
+		grid-area: brand;
+	}
+	.nav {
+		grid-area: nav;
+	}
+	}
+	
+    
+
+/* vista mobile Bio*/
+
+/*
+@media only screen and (min-width: 1023px){
+	.gridContainerBio{
+		display: grid;
+		grid-template-areas: 
+		"tituloBio tituloBio"
+		"textoBio textoBio"
+		"textoBio textoBio"
+		"figureBio figureBio";
+		grid-template-columns:  50% 50%; 
+		grid-template-rows: 100px 250px 200px 400px;
+	}
+	
+	.tituloBio{
+		grid-area: tituloBio;
+	}
+	.textoBio {
+		grid-area: textoBio;
+	}
+
+	.figureBio {
+		grid-area: figureBio;
+	}
+	}
+	*/
+	
+	/*@media only screen and (min-width: 0px) and (max-width: 768px){
+		.gridContainerBio{
+			display: grid;
+			grid-template-areas: 
+			"tituloBio"
+			"textoBio"
+			"textoBio"
+			"figureBio ";
+			grid-template-columns: 100%; 
+			grid-template-rows: 100px 550px 550px 675px;
+		}
+		
+		.tituloBio{
+			grid-area: tituloBio;
+		}
+		.textoBio {
+			grid-area: textoBio;
+		}
+	
+		.figureBio {
+			grid-area: figureBio;
+		}
+		}
+ */
+
+/* vista mobile Bio*/
+
+@media only screen and (min-width: 0px) and (max-width: 768px){
+	.GridContainerBio1{
+		display: grid;
+		grid-template-areas: 
+		"headerBio"
+		"gridContainerNav"
+		"gridContainerSection1Bio"
+		"gridContainerSection2Bio"
+		"gridContainerFooterBio";
+		grid-template-columns: 100%; 
+		grid-template-rows: 100px 550px 1100px 200px 300px;
+	}
+	
+	.video-fluid {
+		width: 200px;
+		height: 100px;
+	}
+	.headerBio{
+		grid-area: headerBio;
+	}
+	.gridConatinerNav {
+		grid-area: gridContainerNav;
+	}
+
+	.gridContainerSection1Bio {
+		grid-area: gridContainerSection1Bio;
+	}
+
+	.gridContainerSection2Bio {
+		grid-area: gridContainerSection2Bio;
+	}
+
+	.gridContainerSection2 {
+		grid-area: gridContainerSection2;
+	}
+
+	.gridContainerFooterBio {
+		grid-area: gridContainerFooterBio;
+	}
+	}
+
+/* vista mobile Press*/
+
+@media only screen and (min-width: 0px) and (max-width: 768px){
+	.gridContainerPress{
+		display: grid;
+		grid-template-areas: 
+		"headerPress"
+		"gridConatinerNav"
+		"gridContainerSection1"
+		"gridContainerSection2"
+		"gridContainerFooter";
+		grid-template-columns: 100%; 
+		grid-template-rows: 100px 550px 550px 675px 200px;
+	}
+	
+	.headerPress{
+		grid-area: headerPress;
+	}
+	.gridConatinerNav {
+		grid-area: gridConatinerNav;
+	}
+
+	.gridContainerSection1 {
+		grid-area: gridContainerSection1;
+	}
+
+	.gridContainerSection2 {
+		grid-area: gridContainerSection2;
+	}
+
+	.gridContainerFooter {
+		grid-area: gridContainerFooter;
+	}
+	}
+
+
+/* vista mobile Media*/
+
+@media only screen and (min-width: 0px) and (max-width: 768px){
+	.gridContainerMedia{
+		display: grid;
+		grid-template-areas: 
+		"headerMedia"
+		"gridConatinerNav"
+		"gridContainerSectionMedia"
+		"gridContainerFooter";
+		grid-template-columns: 100%; 
+		grid-template-rows: 100px 550px 1650px  300px;
+	}
+	
+	.headerMedia{
+		grid-area: headerMedia;
+	}
+	.gridConatinerNav {
+		grid-area: gridConatinerNav;
+	}
+
+	.gridContainerSectionMedia {
+		grid-area: gridContainerSectionMedia;
+	}
+
+	.gridContainerFooter {
+		grid-area: gridContainerFooter;
+	}
+	}

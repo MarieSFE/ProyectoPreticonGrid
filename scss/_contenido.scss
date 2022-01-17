@@ -1,0 +1,251 @@
+
+:root {
+    --text-color: rgb(0,0,0);
+    --contrast-color: rgb(189, 55, 0);
+    --bg-dark-color: rgb(0,0,0);
+    --bg-light-color: rgba(0,0,0,0.1); 
+    --text-light-color: rgba(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alegreya', serif;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+h1, h2 {   
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;    
+}
+
+a {
+    color: var(--contrast-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+cite, address {
+    font-style: normal;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3.25rem;
+    line-height: 1em;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+}
+
+/************************************************************
+Contenedores del sitio
+*************************************************************/
+header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;    
+    background-color: var(--bg-dark-color);
+    color: var(--text-light-color);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container1 {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+  
+@media (min-width: 576px) {
+    .container1 {
+      max-width: 540px;
+    }
+}
+  
+@media (min-width: 768px) {
+    .container1{
+      max-width: 720px;
+    }
+}
+  
+@media (min-width: 992px) {
+    .container1 {
+      max-width: 960px;
+    }
+}
+  
+@media (min-width: 1200px) {
+    .container1 {
+      max-width: 1140px;
+    }
+}
+
+
+/* cuadricula de fotos en Gallery*/
+
+.missions div {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.missions h3 {
+    line-height: 1.2;
+}
+@media (min-width: 992px) {
+    .bg-hero {
+        height: 70vh;
+        background-size: contain;
+        background-position: top right;
+    }
+    .bg-hero h1 {
+        font-size: 6.25rem;
+        font-weight: 700;
+    }
+    .bg-hero p {
+        font-size: 3.25rem;
+    }
+    .missions {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .missions>div {
+       width: 48%;
+       margin-bottom: 0;
+       margin-left: 1%;
+       margin-right: 1%;
+    }
+    .missions div.content {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .missions>div {
+        width: 33.33333%;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+     }
+    .missions div:nth-child(odd) {
+        background-color: var(--bg-light-color);
+    }
+}
+
+figure 
+
+figure >figcaption {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/************************************************************
+Página Media German
+*************************************************************/
+
+#cinema cite {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1;
+}
+#cinema.grid-container > figure {
+    background-color: var(--bg-light-color);
+    margin-bottom: 24px
+}
+#cinema.grid-container > figure >figcaption {
+    padding: 15px;
+    text-align: center;
+}
+@media (min-width: 992px) {
+    #cinema.grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 24px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+
+article ul {
+    font-size: 1.25rem;
+    padding-left: 30px;
+    margin-bottom: 1rem;
+    list-style-type: square;
+}
+
+//Media iframe
+
+.video-fluid {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.video-fluid-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-fluid::before {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+}
+
+//Index con Bootstrap
+
+
+

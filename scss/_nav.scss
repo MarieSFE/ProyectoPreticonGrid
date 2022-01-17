@@ -1,0 +1,161 @@
+/************************************************************
+Menú de navegación del sitio
+*************************************************************/
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    width: fit-content;
+    text-align: center; 
+    background-color: aquamarine;  
+    padding-top: 2em;
+    padding-bottom: 2em; 
+    padding-left: 2em;
+    width: 100%;  
+   
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1.8em;
+    font-weight: 400;
+    padding-left: 0;
+    padding: 1.5em;
+    list-style-type: none;
+    text-align: center;   
+   
+}
+nav li.active {
+    font-weight: bold;
+}
+
+.nav{
+	display: flex;
+	flex-direction: row;
+	@media only screen and (max-width: 768px){
+		justify-content: center;
+        width: 100%;
+	}
+	@media only screen and (min-width: 1023px){
+		justify-content: flex-end;
+        width: 100%;
+	}
+	li{
+		list-style-type: none;
+		a{
+			text-decoration: none;
+			color:blue;
+			@media only screen and (max-width: 768px){
+				padding:10px;
+			}
+			@media only screen and (min-width: 1023px){
+				padding: 20px;
+			}
+			&:hover{
+				color:rgb(189, 55, 0);
+			}
+		}
+	}
+}
+
+
+.container1 {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+  
+@media (min-width: 576px) {
+    .container1 {
+      max-width: 540px;
+    }
+}
+  
+@media (min-width: 768px) {
+    .container1 {
+      max-width: 720px;
+    }
+}
+  
+@media (min-width: 992px) {
+    .container1 {
+      max-width: 960px;
+    }
+}
+  
+@media (min-width: 1200px) {
+    .container1 {
+      max-width: 1140px;
+    }
+}
+
+@media (min-width: 992px) {
+    nav.nav {
+        text-align: left;
+    }
+    nav.nav ul li {
+        display: inline-block;
+        font-size: 1.75rem;
+        font-weight: 800;
+        padding-right: 30px;
+    }    
+    nav.nav ul li:last-child {
+        padding-right: 0;
+    }
+}
+
+nav.nav {
+    text-align: center;
+    color: black;
+}
+nav.nav ul {
+    margin-top: 15px;
+    list-style-type: none;
+}
+
+nav.nav ul li {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+nav.nav ul li a {
+    color: inherit;
+}
+
+nav.nav ul li a:hover {
+    border: none;
+    color: var(--contrast-color);
+}
+
+nav.nav a.active {
+    border-bottom: 3px solid currentColor;
+}
+
+nav.nav a.active:hover {
+    border-bottom: 3px solid currentColor;
+}
+
+
+nav ul li:first-child::before {
+    content: "";
+}
+
+nav ul li a {
+    color: inherit;
+    border: none;
+}
+
+nav ul li a:hover {
+    border: none;
+    color: var(--contrast-color);
+}
+
+
+
+
+
+
+
+
